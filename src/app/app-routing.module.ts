@@ -42,6 +42,10 @@ const routes: Routes = [
     path: 'date-time',
     loadChildren: () => import('./page/date-time/date-time.module').then( m => m.DateTimePageModule)
   },
+  {
+    path: 'fab',
+    loadChildren: () => import('./page/fab/fab.module').then( m => m.FabPageModule)
+  },
 
 ];
 
