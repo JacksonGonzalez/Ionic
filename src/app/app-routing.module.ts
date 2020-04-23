@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'action-sheet',
     loadChildren: () => import('./page/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
+  },  {
+    path: 'avatar',
+    loadChildren: () => import('./page/avatar/avatar.module').then( m => m.AvatarPageModule)
   },
+
 ];
 
 @NgModule({
