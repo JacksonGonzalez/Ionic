@@ -1,7 +1,33 @@
-<app-header titulo="Alert"></app-header>
-
-
+<app-header [titulo]="titulo || 'Alert'"></app-header>
 
 <ion-content>
-  <h1>Este es alerta</h1>
+  <h1>Estas son Alertas</h1>
+  <ion-button expand="full" color="primary" (click)="cambiarTitulo()">
+    Cambiar Titulo
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlert()">
+    presentAlert
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertMultipleButtons()">
+    presentAlertMultipleButtons
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertConfirm()">
+    presentAlertConfirm
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertPrompt()">
+    presentAlertPrompt
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertRadio()">
+    presentAlertRadio
+  </ion-button>
+
+  <ion-button expand="full" color="primary" (click)="presentAlertCheckbox()">
+    presentAlertCheckbox
+  </ion-button>
+
 </ion-content>
