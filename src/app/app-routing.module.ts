@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'botones',
     loadChildren: () => import('./page/botones/botones.module').then( m => m.BotonesPageModule)
   },
+  {
+    path: 'card',
+    loadChildren: () => import('./page/card/card.module').then( m => m.CardPageModule)
+  },
 
 ];
 
