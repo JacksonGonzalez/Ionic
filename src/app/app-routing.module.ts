@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'check',
     loadChildren: () => import('./page/check/check.module').then( m => m.CheckPageModule)
   },
+  {
+    path: 'date-time',
+    loadChildren: () => import('./page/date-time/date-time.module').then( m => m.DateTimePageModule)
+  },
 
 ];
 
