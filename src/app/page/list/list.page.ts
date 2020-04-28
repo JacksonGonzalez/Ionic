@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class ListPage implements OnInit {
 
+
   usuarios: Observable<any>;
 
   constructor(private dataService: DataService) { }
@@ -17,5 +18,21 @@ export class ListPage implements OnInit {
     this.usuarios = this.dataService.getUsers();
     
   }
+
+  favorite(user){
+    console.log('favorite', user);
+    
+  }
+
+  share(user){
+    console.log('share', user);
+    
+  }
+
+  unread(user){
+    console.log('unread', user);
+    
+  }
+
 
 }
