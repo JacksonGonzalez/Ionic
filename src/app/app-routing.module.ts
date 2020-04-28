@@ -58,6 +58,10 @@ const routes: Routes = [
     path: 'input',
     loadChildren: () => import('./page/input/input.module').then( m => m.InputPageModule)
   },
+  {
+    path: 'list',
+    loadChildren: () => import('./page/list/list.module').then( m => m.ListPageModule)
+  },
 
 ];
 
