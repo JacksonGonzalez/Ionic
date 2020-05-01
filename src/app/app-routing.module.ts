@@ -22,7 +22,8 @@ const routes: Routes = [
   {
     path: 'action-sheet',
     loadChildren: () => import('./page/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
-  },  {
+  },
+  {
     path: 'avatar',
     loadChildren: () => import('./page/avatar/avatar.module').then( m => m.AvatarPageModule)
   },
@@ -70,6 +71,11 @@ const routes: Routes = [
     path: 'loading',
     loadChildren: () => import('./page/loading/loading.module').then( m => m.LoadingPageModule)
   },
+  {
+    path: 'modal',
+    loadChildren: () => import('./page/modal/modal.module').then( m => m.ModalPageModule)
+  },
+  
 
 ];
 
