@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-inicio',
@@ -69,7 +70,7 @@ export class InicioPage implements OnInit {
       redirectTo: '/list'
     },
     {
-      icon: 'reorder',
+      icon: 'reorder-three',
       name: 'Reorder',
       redirectTo: '/list-reorder'
     },
@@ -80,9 +81,15 @@ export class InicioPage implements OnInit {
     }
     ];
 
-  constructor() { }
+  constructor(public menuCtrl: MenuController) { }
 
   ngOnInit() {
+  }
+
+  toggleMenu(){
+    console.log('hola');
+    
+    this.menuCtrl.toggle();
   }
 
 }
