@@ -62,6 +62,10 @@ const routes: Routes = [
     path: 'list',
     loadChildren: () => import('./page/list/list.module').then( m => m.ListPageModule)
   },
+  {
+    path: 'list-reorder',
+    loadChildren: () => import('./page/list-reorder/list-reorder.module').then( m => m.ListReorderPageModule)
+  },
 
 ];
 
