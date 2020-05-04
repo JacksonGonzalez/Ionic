@@ -75,6 +75,10 @@ const routes: Routes = [
     path: 'modal',
     loadChildren: () => import('./page/modal/modal.module').then( m => m.ModalPageModule)
   },
+  {
+    path: 'popover',
+    loadChildren: () => import('./page/popover/popover.module').then( m => m.PopoverPageModule)
+  },
   
 
 ];
