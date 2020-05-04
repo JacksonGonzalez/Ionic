@@ -22,6 +22,14 @@ export class PopoverPage implements OnInit {
         translucent: true
       });
 
-      return await popover.present();
+      await popover.present();
+
+      // recibir la data del componente
+
+      // const {data} = await popover.onDidDismiss();
+      const {data} = await popover.onWillDismiss();
+
+      console.log('Padre: ', data);
+      
   }
 }
