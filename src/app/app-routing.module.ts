@@ -87,6 +87,10 @@ const routes: Routes = [
     path: 'refresher',
     loadChildren: () => import('./page/refresher/refresher.module').then( m => m.RefresherPageModule)
   },
+  {
+    path: 'searchbar',
+    loadChildren: () => import('./page/searchbar/searchbar.module').then( m => m.SearchbarPageModule)
+  },
   
 
 ];
